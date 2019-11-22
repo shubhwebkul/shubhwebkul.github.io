@@ -1,23 +1,6 @@
 var app = new Vue({
     el: '#app',
 
-    data: function () {
-        return {}
-    },
-
-    computed: {
-        'hash': function () {
-            debugger
-            return window.location.hash;
-        }
-    },
-
-    watch: {
-        'window.location.hash': function (old, newjk) {
-            debugger
-        }
-    },
-
     methods: {
         updateScroll: function() {
             this.scrollPosition = window.scrollY;
@@ -38,7 +21,7 @@ var app = new Vue({
     },
 });
 
-window.addEventListener('hashchange', () => {
+var showActiveTab = () => {
     let headerPageLinks = document.getElementsByClassName('page-link');
 
     Array.from(headerPageLinks).forEach(element => {
@@ -49,4 +32,7 @@ window.addEventListener('hashchange', () => {
         }
 
     });
-});
+}
+
+window.addEventListener('load', showActiveTab);
+window.addEventListener('hashchange', showActiveTab);
