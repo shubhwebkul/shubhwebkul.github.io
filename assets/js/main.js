@@ -34,9 +34,11 @@ var showActiveTab = () => {
     });
 }
 
+var windowloaded = () => {
+    alert("Hola! \nSorry for the interuption. This portfolio is not fully updated. Please contact me for updated details. \n \n Thanks!");
+    console.log("%cHola!", "color: #2149f3; font-size:20px;");
+}
+
+window.addEventListener('load', windowloaded);
 window.addEventListener('load', showActiveTab);
 window.addEventListener('hashchange', showActiveTab);
-
-(() => {
-    console.log("%cHola!", "color: #2149f3; font-size:20px;");
-})();
