@@ -36,3 +36,7 @@ var showActiveTab = () => {
 
 window.addEventListener('load', showActiveTab);
 window.addEventListener('hashchange', showActiveTab);
+
+(() => {
+    console.log("%cHola!", "color: #2149f3; font-size:20px;");
+})();
