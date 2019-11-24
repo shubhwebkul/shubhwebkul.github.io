@@ -6,13 +6,16 @@
 
         <link rel="stylesheet" href="./assets/css/main.css" />
 
+        <link rel="stylesheet" href="./assets/css/materialdesign.css" />
+
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     </head>
 
     <body>
-        <div class="overflow-wrap" id="app">
+        <div class="overflow-wrap animated" id="app">
+
             <!-- HOME -->
             <div class="modal-wrap flex">
                 <div class="mask"></div>
@@ -68,8 +71,8 @@
             <!-- ABOUT -->
             <section id="about">
                 <div class="container flex">
-                    <div class="header waypoint" data-animation="slide-in-left">ABOUT</div>
-                    <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+                    <div class="header waypoint slide-in-left"> ABOUT</div>
+                    <div class="header-bar waypoint slide-in-left data-delay-5s"></div>
                     <div class="flex row label-wrap">
                         <div class="flex row-gt-sm">
                             <div class="flex bullet-wrap ">
@@ -79,7 +82,7 @@
                                     </div>
                                 </div>
                                 <div class="waypoint" data-animation="fade-in">
-                                    <div class="label bold">Fast</div>
+                                    <div class="label bold">Punctual</div>
                                     <div>Fast load times and lag free interaction, my highest priority.</div>
                                 </div>
                             </div>
@@ -91,7 +94,7 @@
                                     </div>
                                 </div>
                                 <div class="waypoint" data-animation="fade-in" data-delay=".2s">
-                                    <div class="label bold">Responsive</div>
+                                    <div class="label bold">Responsible</div>
                                     <div>My layouts will work on any device, big or small.</div>
                                 </div>
                             </div>
@@ -104,7 +107,7 @@
                                     </div>
                                 </div>
                                 <div class="waypoint" data-animation="fade-in" data-delay=".4s">
-                                    <div class="label bold">Intuitive</div>
+                                    <div class="label bold">Self motivated</div>
                                     <div>Strong preference for easy to use, intuitive UX/UI.</div>
                                 </div>
                             </div>
@@ -116,7 +119,7 @@
                                     </div>
                                 </div>
                                 <div class="waypoint" data-animation="fade-in" data-delay=".6s">
-                                    <div class="label bold">Dynamic</div>
+                                    <div class="label bold">Highly Enthusiastic</div>
                                     <div>Websites don't have to be static, I love making pages come to life.</div>
                                 </div>
                             </div>
@@ -124,9 +127,12 @@
                     </div>
 
                     <div class="skills-wrapper flex row-gt-sm">
-                        <div class="flex flex-50-gt-sm waypoint" data-animation="slide-in-left">
-                            <!-- <img src="img/me.png" class="me"> -->
-                        <!-- <div><img class="up-arrow" src="img/up-arrow.png"></div> -->
+                        <div class="flex flex-50-gt-sm waypoint slide-in-left">
+
+                            <div class="me">
+                                <img src="./assets/images/favicon.ico">
+                            </div>
+
                             <div class="label bold">Who's this guy?</div>
                             <div>
                                 I'm the Full-Stack Developer for <a class="highlight" href="http://www.webkul.com" target="_blank">Webkul</a> in Noida.
@@ -137,7 +143,7 @@
                             </div>
                         </div>
 
-                        <div class="flex flex-50-gt-sm waypoint bars-wrap"  data-animation="slide-in-right">
+                        <div class="flex flex-50-gt-sm waypoint bars-wrap slide-in-right">
                             <div class="bar flex">
                                 <div class="bar fill" style="width:75%">
                                     <div class="tag bold flex">CSS</div>
@@ -201,10 +207,10 @@
 
             <!-- PORTFOLIO -->
             <section class="flex" id="portfolio">
-                <div class="header waypoint" data-animation="slide-in-right">PROJECTS</div>
-                <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".3s"></div>
+                <div class="header waypoint slide-in-right">PROJECTS</div>
+                <div class="header-bar waypoint slide-in-right data-delay-3s"></div>
 
-                <div class="filter-wrap waypoint" data-animation="fade-in">
+                <!-- <div class="filter-wrap waypoint" data-animation="fade-in">
                     <div class="flex row">
                         <div class="filter" data-filter="all">ALL</div>
                         <div class="filter" data-filter=".node">NODE.JS</div>
@@ -219,7 +225,9 @@
                             <div class="filter" data-filter=".js">JAVASCRIPT</div>
                         </div>
                     </div>
-                </div>
+                </div> -->
+
+                <span>Will update soon</span>
 
                 <div id="gallery" class="container flex row wrap waypoint">
                     <div class="mix js" data-my-order="1">
@@ -294,10 +302,12 @@
             <!-- BLOG -->
             <section id="blog">
                 <div class="container flex">
-                    <div class="header waypoint" data-animation="slide-in-left">BLOG</div>
-                    <div class="header-bar waypoint" data-animation="slide-in-left" data-delay=".5s"></div>
+                    <div class="header waypoint slide-in-left">BLOG</div>
+                    <div class="header-bar waypoint slide-in-left data-delay-5s"></div>
 
-                    <div class="flex row wrap">
+                    <span>Will update soon</span>
+
+                    <!-- <div class="flex row wrap">
                         <div class="flex row-gt-sm">
                             <a href="http://blog.eyecuelab.com/2016/04/29/breaking-your-coders-block/" target="_blank">
                                 <div class="blog-wrap waypoint" data-animation="fade-in">
@@ -354,7 +364,7 @@
                                 </div>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
 
@@ -364,10 +374,10 @@
                     <path d="M0 0 L50 100 L100 0 Z" fill="white" stroke="white"></path>
                 </svg>
                 <div class="container flex">
-                    <div class="header waypoint" data-animation="slide-in-left">CONTACT</div>
-                    <div class="header-bar waypoint" data-animation="slide-in-right" data-delay=".25s"></div>
-                    <div class="highlight waypoint" data-animation="slide-in-right" data-delay=".5s">Have a question or want to work together?</div>
-                    <form class="waypoint" data-animation="pop-in" data-delay=".5s" id="contact-form">
+                    <div class="header waypoint slide-in-left">CONTACT</div>
+                    <div class="header-bar waypoint slide-in-right data-delay-25s" data-delay=".25s"></div>
+                    <div class="highlight waypoint slide-in-right data-delay-5s" data-delay=".5s">Have a question or want to work together?</div>
+                    <form class="waypoint pop-in data-delay-5s" id="contact-form">
                         <input placeholder="Name" type="text" name="name" required>
                         <input placeholder="Enter email" type="email" name="email" required>
                         <textarea placeholder="Your Message" type="text" name="message"></textarea>
