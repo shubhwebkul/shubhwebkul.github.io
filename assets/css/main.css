@@ -1387,13 +1387,15 @@ footer .footnote .highlight {
 }
 
 .me {
-    width: 300px;
+    width: 100%;
+    height: 450px !important;
     display: inline-block;
 }
 
 .me img {
     width: 100%;
     height: 100%;
+    border-radius: 500px;
 }
 
 .animated .data-delay-5s {

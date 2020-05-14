@@ -35,7 +35,12 @@ var showActiveTab = () => {
 }
 
 var windowloaded = () => {
-    alert("Hola! \nSorry for the interuption. This portfolio is not fully updated. Please contact me for updated details. \n \n Thanks!");
+    let answer = confirm("Hola! \nSorry for the interuption. This portfolio is not fully updated. Please contact me for updated details. \n \n Thanks! \n \n Want to visit Github profile ?");
+
+    if (answer) {
+        window.location.href = "https://github.com/shubhwebkul";
+    }
+
     console.log("%cHola!", "color: #2149f3; font-size:20px;");
 }
 
